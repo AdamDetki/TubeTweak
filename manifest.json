@@ -1,23 +1,28 @@
-"manifest_version": 3,
-"background": {
-    "service_worker": "background.js"
-},
-"name": "TubeTweak",
-"description": "",
-"version": "0.0.1",
-"icons": {
-    "16": "resources/images/",
-    "32": "resources/images/",
-    "48": "resources/images/",
-    "128": "resources/images/",
-}
+{
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "name": "TubeTweak",
+    "description": "",
+    "version": "0.0.1",
+    "icons": {
+        "16": "resources/images/",
+        "32": "resources/images/",
+        "48": "resources/images/",
+        "128": "resources/images/"
+    },
+
     "content_scripts": [
-    {
-        "js": [
-            "index.js"
-        ],
-        "matches": [
-            "https://www.youtube.com/*"
-        ]
-    }
-]
+        {
+          "js": [
+            "scripts/content.js"
+          ],
+          "matches": [
+            "https://developer.chrome.com/docs/extensions/*"
+          ]
+        }
+      ]
+    
+}
